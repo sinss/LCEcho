@@ -1,0 +1,9 @@
+/* Localized versions of Info.plist keys */
+CFBundleDisplayName="文化Echo";
+"pccu_news1"="活動部-公佈事項";
+"pccu_news2"="權益部-公佈事項";
+"pccu_news3"="公關部-公佈事項";
+"pccu_news4"="人資部-公佈事項";
+"pccu_news5"="理事會-公佈事項";
+"pccu_news6"="財務部-公佈事項";
+"pccu_news7"="社團活動";
