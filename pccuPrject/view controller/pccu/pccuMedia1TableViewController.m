@@ -41,6 +41,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)])
+    {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
     UIImageView *bgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"news_bg.png"]];
     [self.tableView setBackgroundView:bgView];
@@ -249,7 +253,7 @@
 {
     pccuMediaArray = [[NSArray alloc] initWithArray:newsArray];
     //NSLog(@"%@",storeArray);
-    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self.tableView reloadData];
 }
 
 

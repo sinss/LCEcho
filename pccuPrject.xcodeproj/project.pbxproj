@@ -73,11 +73,11 @@
 		07567AC1162E5A520024C266 /* ProcessImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 075679EF162E5A520024C266 /* ProcessImage.m */; };
 		07567AC2162E5A520024C266 /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 075679F1162E5A520024C266 /* UIImage+Extras.m */; };
 		07567AC3162E5A520024C266 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 075679F5162E5A520024C266 /* ASIAuthenticationDialog.m */; };
-		07567AC4162E5A520024C266 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 075679F8162E5A520024C266 /* ASIDataCompressor.m */; };
-		07567AC5162E5A520024C266 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 075679FA162E5A520024C266 /* ASIDataDecompressor.m */; };
+		07567AC4162E5A520024C266 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 075679F8162E5A520024C266 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		07567AC5162E5A520024C266 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 075679FA162E5A520024C266 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		07567AC6162E5A520024C266 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 075679FC162E5A520024C266 /* ASIDownloadCache.m */; };
 		07567AC7162E5A520024C266 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 075679FE162E5A520024C266 /* ASIFormDataRequest.m */; };
-		07567AC8162E5A520024C266 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07567A00162E5A520024C266 /* ASIHTTPRequest.m */; };
+		07567AC8162E5A520024C266 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07567A00162E5A520024C266 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		07567AC9162E5A520024C266 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 07567A04162E5A520024C266 /* ASIInputStream.m */; };
 		07567ACA162E5A520024C266 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 07567A06162E5A520024C266 /* ASINetworkQueue.m */; };
 		07567ACB162E5A520024C266 /* AutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07567A09162E5A520024C266 /* AutoScrollLabel.m */; };
@@ -256,11 +256,11 @@
 		07B965E31654E92B0073278B /* ProcessImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 075679EF162E5A520024C266 /* ProcessImage.m */; };
 		07B965E41654E92B0073278B /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 075679F1162E5A520024C266 /* UIImage+Extras.m */; };
 		07B965E51654E92B0073278B /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 075679F5162E5A520024C266 /* ASIAuthenticationDialog.m */; };
-		07B965E61654E92B0073278B /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 075679F8162E5A520024C266 /* ASIDataCompressor.m */; };
-		07B965E71654E92B0073278B /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 075679FA162E5A520024C266 /* ASIDataDecompressor.m */; };
+		07B965E61654E92B0073278B /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 075679F8162E5A520024C266 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		07B965E71654E92B0073278B /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 075679FA162E5A520024C266 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		07B965E81654E92B0073278B /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 075679FC162E5A520024C266 /* ASIDownloadCache.m */; };
 		07B965E91654E92B0073278B /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 075679FE162E5A520024C266 /* ASIFormDataRequest.m */; };
-		07B965EA1654E92B0073278B /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07567A00162E5A520024C266 /* ASIHTTPRequest.m */; };
+		07B965EA1654E92B0073278B /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07567A00162E5A520024C266 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		07B965EB1654E92B0073278B /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 07567A04162E5A520024C266 /* ASIInputStream.m */; };
 		07B965EC1654E92B0073278B /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 07567A06162E5A520024C266 /* ASINetworkQueue.m */; };
 		07B965ED1654E92B0073278B /* AutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07567A09162E5A520024C266 /* AutoScrollLabel.m */; };
@@ -496,8 +496,6 @@
 		0F2B5B3916E34B7900E69C4E /* s17.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F2B5AF216E34B7900E69C4E /* s17.png */; };
 		0F2B5B3A16E34B7900E69C4E /* s17@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F2B5AF316E34B7900E69C4E /* s17@2x.png */; };
 		0F2B5B3B16E34B7900E69C4E /* s17@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F2B5AF316E34B7900E69C4E /* s17@2x.png */; };
-		0F6D034D167E1D47003016CC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6D034C167E1D47003016CC /* icon.png */; };
-		0F6D034F167E1D4F003016CC /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6D034E167E1D4F003016CC /* icon@2x.png */; };
 		0F73BE6E164FE29800FD8E30 /* pccuMediaRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F73BE6D164FE29800FD8E30 /* pccuMediaRecord.m */; };
 		0F73BE711650053700FD8E30 /* pccuMediaOther.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F73BE701650053700FD8E30 /* pccuMediaOther.m */; };
 		0F775E70167E1BCD00C2649A /* customImgaeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F775E6F167E1BCD00C2649A /* customImgaeView.m */; };
@@ -560,6 +558,7 @@
 		0F88680816F3728A0076E8F5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8867FC16F371FA0076E8F5 /* Social.framework */; };
 		0F88680916F372920076E8F5 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8867FE16F372020076E8F5 /* AdSupport.framework */; };
 		0F88680A16F372980076E8F5 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F88680216F372320076E8F5 /* libsqlite3.0.dylib */; };
+		0F8880F5180C43C9004E45B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F8880F4180C43C9004E45B6 /* Images.xcassets */; };
 		0F914D9E168DEA7B00ACB09B /* btn_blue_bg_a.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F914D88168DEA7B00ACB09B /* btn_blue_bg_a.png */; };
 		0F914D9F168DEA7B00ACB09B /* btn_blue_bg_a.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F914D88168DEA7B00ACB09B /* btn_blue_bg_a.png */; };
 		0F914DA0168DEA7B00ACB09B /* btn_blue_bg_a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F914D89168DEA7B00ACB09B /* btn_blue_bg_a@2x.png */; };
@@ -954,8 +953,6 @@
 		0F2B5AF116E34B7900E69C4E /* s16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "s16@2x.png"; sourceTree = "<group>"; };
 		0F2B5AF216E34B7900E69C4E /* s17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s17.png; sourceTree = "<group>"; };
 		0F2B5AF316E34B7900E69C4E /* s17@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "s17@2x.png"; sourceTree = "<group>"; };
-		0F6D034C167E1D47003016CC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		0F6D034E167E1D4F003016CC /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		0F73BE6C164FE29800FD8E30 /* pccuMediaRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pccuMediaRecord.h; sourceTree = "<group>"; };
 		0F73BE6D164FE29800FD8E30 /* pccuMediaRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pccuMediaRecord.m; sourceTree = "<group>"; };
 		0F73BE6F1650053700FD8E30 /* pccuMediaOther.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pccuMediaOther.h; sourceTree = "<group>"; };
@@ -1005,6 +1002,7 @@
 		0F8867FE16F372020076E8F5 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		0F88680016F372170076E8F5 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		0F88680216F372320076E8F5 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		0F8880F4180C43C9004E45B6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "pccuPrject production/Images.xcassets"; sourceTree = "<group>"; };
 		0F914D88168DEA7B00ACB09B /* btn_blue_bg_a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_blue_bg_a.png; sourceTree = "<group>"; };
 		0F914D89168DEA7B00ACB09B /* btn_blue_bg_a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_blue_bg_a@2x.png"; sourceTree = "<group>"; };
 		0F914D8A168DEA7B00ACB09B /* btn_blue_bg_b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_blue_bg_b.png; sourceTree = "<group>"; };
@@ -1094,8 +1092,7 @@
 		07567949162E59140024C266 = {
 			isa = PBXGroup;
 			children = (
-				0F6D034E167E1D4F003016CC /* icon@2x.png */,
-				0F6D034C167E1D47003016CC /* icon.png */,
+				0F8880F4180C43C9004E45B6 /* Images.xcassets */,
 				07B965601654C3600073278B /* Default-568h@2x.png */,
 				07B9655E1654C35C0073278B /* Default@2x.png */,
 				07B9655C1654C3550073278B /* Default.png */,
@@ -2191,6 +2188,7 @@
 				07B966851654E92B0073278B /* card_EST.png in Resources */,
 				07B966861654E92B0073278B /* card_G.png in Resources */,
 				07B966871654E92B0073278B /* card_J.png in Resources */,
+				0F8880F5180C43C9004E45B6 /* Images.xcassets in Resources */,
 				07B966881654E92B0073278B /* card_U.png in Resources */,
 				07B966891654E92B0073278B /* sylinCoin_bg.png in Resources */,
 				07B9668A1654E92B0073278B /* TabBarNipple.png in Resources */,
@@ -2214,8 +2212,6 @@
 				0F775EAF167E1BFE00C2649A /* pccuMoreViewController.xib in Resources */,
 				0F775EB3167E1BFE00C2649A /* pccuNewsDetailViewController.xib in Resources */,
 				0F775EBE167E1C1D00C2649A /* pccuImageCell.xib in Resources */,
-				0F6D034D167E1D47003016CC /* icon.png in Resources */,
-				0F6D034F167E1D4F003016CC /* icon@2x.png in Resources */,
 				0F914D9F168DEA7B00ACB09B /* btn_blue_bg_a.png in Resources */,
 				0F914DA1168DEA7B00ACB09B /* btn_blue_bg_a@2x.png in Resources */,
 				0F914DA3168DEA7B00ACB09B /* btn_blue_bg_b.png in Resources */,
@@ -2600,7 +2596,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pccuPrject/pccuPrject-Prefix.pch";
 				INFOPLIST_FILE = "pccuPrject/pccuPrject-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8F1E8215-B862-432C-A094-95C4345B3EA5";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8F1E8215-B862-432C-A094-95C4345B3EA5";
@@ -2620,7 +2616,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pccuPrject/pccuPrject-Prefix.pch";
 				INFOPLIST_FILE = "pccuPrject/pccuPrject-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8F1E8215-B862-432C-A094-95C4345B3EA5";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8F1E8215-B862-432C-A094-95C4345B3EA5";
@@ -2631,6 +2627,8 @@
 		07B966C01654E92B0073278B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2640,7 +2638,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pccuPrject/pccuPrject-Prefix.pch";
 				INFOPLIST_FILE = "pccuPrject copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "pccuPrject copy";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -2651,6 +2649,8 @@
 		07B966C11654E92B0073278B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2660,7 +2660,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pccuPrject/pccuPrject-Prefix.pch";
 				INFOPLIST_FILE = "pccuPrject copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "pccuPrject copy";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

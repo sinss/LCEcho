@@ -188,7 +188,7 @@
             MoreContentViewController *moreContentView = [[MoreContentViewController alloc] initWithNibName:@"MoreContentViewController" bundle:nil];
             [moreContentView setCurrentUrl:[NSURL URLWithString:[dict valueForKey:@"url"]]];
             [moreContentView setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-            [self presentModalViewController:moreContentView animated:YES];
+            [self presentViewController:moreContentView animated:YES completion:nil];
         }
         else if ([type isEqualToString:@"1"])
         {
@@ -206,7 +206,7 @@
 }
 - (void)closeItemPress
 {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)loadMoreContent
@@ -249,7 +249,7 @@
             message = @"Result : Mail no Send";
             break;
     }
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 #pragma mark - user define function
 - (void)showMailWithDictionary:(NSDictionary*)dict;
@@ -268,7 +268,7 @@
     NSString *emailBody = @"Dear 士林夢工廠";
     
     [compose setMessageBody:emailBody isHTML:NO];
-    [self presentModalViewController:compose animated:YES];
+    [self presentViewController:compose animated:YES completion:nil];
     UIImage *image = [UIImage imageNamed:@""];
     [[[[compose navigationBar] items] objectAtIndex:0] setTitleView:[[UIImageView alloc] initWithImage:image]];
 }

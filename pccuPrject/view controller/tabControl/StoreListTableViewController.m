@@ -436,14 +436,14 @@
 
 - (void)closeItemPress
 {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)showCategoryView
 {
     StoreTypeSelectViewController *typeView = [[StoreTypeSelectViewController alloc] initWithNibName:@"StoreTypeSelectViewController" bundle:nil];
     [typeView setDelegate:self];
     [typeView setModalTransitionStyle:UIModalTransitionStylePartialCurl];
-    [self presentModalViewController:typeView animated:YES];
+    [self presentViewController:typeView animated:YES completion:nil];
     [typeView release];
 }
 - (void) showDistance
@@ -451,7 +451,7 @@
     DistanceSelectViewController *distanceView = [[DistanceSelectViewController alloc] initWithNibName:@"DistanceSelectViewController" bundle:nil];
     [distanceView setModalTransitionStyle:UIModalTransitionStylePartialCurl];
     [distanceView setDelegate:self];
-    [self presentModalViewController:distanceView animated:YES];
+    [self presentViewController:distanceView animated:YES completion:nil];
     [distanceView release];
 }
 

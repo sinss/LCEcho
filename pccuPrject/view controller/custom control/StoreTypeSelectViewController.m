@@ -138,7 +138,7 @@
             desc = [NSString stringWithFormat:@"%@的店家",desc];
         }
         [label setText:[NSString stringWithFormat:@"%@", desc]];
-        [label setTextAlignment:UITextAlignmentCenter];
+        [label setTextAlignment:NSTextAlignmentCenter];
         [label setTextColor:[UIColor darkGrayColor]];
     }
     else if (component == StoreCategoryDistance)
@@ -159,7 +159,7 @@
         }
         [label setText:[NSString stringWithFormat:@"%@以內", desc]];
     }
-    [label setTextAlignment:UITextAlignmentCenter];
+    [label setTextAlignment:NSTextAlignmentCenter];
     [label setTextColor:[UIColor darkGrayColor]];
     
     return label;
@@ -206,11 +206,11 @@
     }
     predictStr = [NSString stringWithFormat:@"%@ and %@", pre1, pre2];
     [delegate storeTypeView:self didSelectWithPredict:predictStr];
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (IBAction)backButtonPress:(id)sender
 {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

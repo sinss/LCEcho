@@ -201,7 +201,7 @@
         MoreContentViewController *moreContentView = [[MoreContentViewController alloc] initWithNibName:@"MoreContentViewController" bundle:nil];
         [moreContentView setCurrentUrl:[NSURL URLWithString:moreItem.CContent]];
         [moreContentView setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-        [self presentModalViewController:moreContentView animated:YES];
+        [self presentViewController:moreContentView animated:YES completion:nil];
         [moreContentView release];
     }
     else if ([moreItem.CType isEqualToString:@"4"])
@@ -216,7 +216,7 @@
         [moreDetailView setTitle:moreItem.CName];
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:moreDetailView];
         [nav setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-        [self presentModalViewController:nav animated:YES];
+        [self presentViewController:moreDetailView animated:YES completion:nil];
         [nav release];
         [moreDetailView release];
     }
@@ -311,7 +311,7 @@
 
 - (void)closeItemPress
 {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

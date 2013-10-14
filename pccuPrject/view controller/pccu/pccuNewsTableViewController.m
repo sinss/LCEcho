@@ -44,6 +44,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)])
+    {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
     if (typeOfPccuNews != pccuNewsType8)
     {
         [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
@@ -110,6 +114,12 @@
     HUD.dimBackground = YES;
     HUD.labelText = @"資料讀取中...";
     [HUD showWhileExecuting:@selector(reloadNewsData) onTarget:self withObject:nil animated:YES];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    NSLog(@"height:%f", self.view.frame.origin.y);
 }
 
 - (void)didReceiveMemoryWarning
@@ -293,7 +303,9 @@
 {
     pccuNewsArray = [[NSArray alloc] initWithArray:newsArray];
     //NSLog(@"%@",storeArray);
-    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationAutomatic];
+    //[self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationAutomatic];
+    //[self.tableView insertSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self.tableView reloadData];
 }
 
 
@@ -304,5 +316,10 @@
 - (void)reloadStoreDataOfRefreshing
 {
     [downloadPccuNews startGetStoreWithRefreshing:YES];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    //NSLog(@"size:%f, scroll:%f", scrollView.contentSize.height, scrollView.contentOffset.y);
 }
 @end

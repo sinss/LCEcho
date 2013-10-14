@@ -50,6 +50,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)])
+    {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
     [aTableView setSeparatorColor:[UIColor clearColor]];
     [aTableView setDelegate:self];
     [aTableView setDataSource:self];

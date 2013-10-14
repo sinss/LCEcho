@@ -91,7 +91,7 @@
         desc = [globalFunction formatDistance:[desc integerValue]];
     }
     [label setText:[NSString stringWithFormat:@"%@以內", desc]];
-    [label setTextAlignment:UITextAlignmentCenter];
+    [label setTextAlignment:NSTextAlignmentCenter];
     [label setTextColor:[UIColor darkGrayColor]];
     
     return label;
@@ -114,11 +114,11 @@
         predictStr = [NSString stringWithFormat:@"Distance < %@", desc];
     }
     [delegate distanceView:self didSelectDistanceWithPredict:predictStr];
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (IBAction)backButtonPress:(id)sender
 {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

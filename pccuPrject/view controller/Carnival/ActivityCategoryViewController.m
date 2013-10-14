@@ -103,7 +103,7 @@
     [nav setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
     [activityListView setActivityType:[categoryArray objectAtIndex:tag]];
     [activityListView setTitle:[categoryNameArray objectAtIndex:tag]];
-    [self presentModalViewController:nav animated:YES];
+    [self presentViewController:nav animated:YES completion:nil];
     [nav release];
 }
 

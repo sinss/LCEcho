@@ -134,7 +134,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tbl cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"menuCell";
     UITableViewCell *cell = [tbl dequeueReusableCellWithIdentifier:CellIdentifier];
     NSUInteger row = [indexPath row];
     NSUInteger sec = [indexPath section];
@@ -156,7 +156,14 @@
         index = 13 + row;
     }
     cell.textLabel.text = [[pccuShareFunction pccuShareFunctionInstance] GetPccuMenuNameWithMenuItem:index];
-    cell.textLabel.textColor = [UIColor lightGrayColor];
+    if (os_version >= 7.0)
+    {
+        cell.textLabel.textColor = [UIColor darkGrayColor];
+    }
+    else
+    {
+        cell.textLabel.textColor = [UIColor lightGrayColor];
+    }
     [cell.textLabel setFont:[UIFont fontWithName:@"Helvetica" size:15]];
     UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sidebarcell"]];
     [bg setFrame:CGRectMake(0, 0, 199.5, 42.5)];

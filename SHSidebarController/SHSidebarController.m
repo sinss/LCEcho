@@ -23,11 +23,25 @@
         CGFloat height;
         if (IS_IPHONE_5)
         {
-            height = 588;
+            if (os_version >= 7.0)
+            {
+                height = 568;
+            }
+            else
+            {
+                height = 548;
+            }
         }
         else
         {
-            height = 460;
+            if (os_version >= 7.0)
+            {
+                height = 480;
+            }
+            else
+            {
+                height = 460;
+            }
         }
         viewsArray = [[NSArray alloc] initWithArray:array];
         menuOpened = FALSE;
@@ -47,7 +61,7 @@
         self.swipeR = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(open)];
         [self.swipeR setDirection:UISwipeGestureRecognizerDirectionRight];
         [self.view addGestureRecognizer:self.swipeR];
-        [self.menuVC.view setFrame:CGRectMake(0, 20, 120, height)];
+        [self.menuVC.view setFrame:CGRectMake(0, 0, 120, height)];
         
         tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(close)];
         swipeL = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(close)];
@@ -128,11 +142,25 @@
     CGFloat height;
     if (IS_IPHONE_5)
     {
-        height = 588;
+        if (os_version >= 7.0)
+        {
+            height  = 568;
+        }
+        else
+        {
+            height = 548;
+        }
     }
     else
     {
-        height = 460;
+        if (os_version >= 7.0)
+        {
+            height = 480;
+        }
+        else
+        {
+            height = 460;
+        }
     }
     
     [self.mainVC.view removeFromSuperview];
@@ -179,11 +207,25 @@
         CGFloat height;
         if (IS_IPHONE_5)
         {
-            height = 588;
+            if (os_version >= 7.0)
+            {
+                height = 568;
+            }
+            else
+            {
+                height = 548;
+            }
         }
         else
         {
-            height = 460;
+            if (os_version >= 7.0)
+            {
+                height = 480;
+            }
+            else
+            {
+                height = 460;
+            }
         }
         self.menuVC.view.frame = CGRectMake(0, 0, 199.5, height);
         

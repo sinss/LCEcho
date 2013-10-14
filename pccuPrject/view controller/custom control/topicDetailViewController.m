@@ -400,7 +400,7 @@
             MoreContentViewController *moreContentView = [[MoreContentViewController alloc] initWithNibName:@"MoreContentViewController" bundle:nil];
             [moreContentView setCurrentUrl:[NSURL URLWithString:currentTopic.ExInfoURL]];
             [moreContentView setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-            [self presentModalViewController:moreContentView animated:YES];
+            [self presentViewController:moreContentView animated:YES completion:nil];
             [moreContentView release];
         }
         else if ([[tmpArray objectAtIndex:row] isEqualToString:@"fb"])
@@ -408,7 +408,7 @@
             MoreContentViewController *moreContentView = [[MoreContentViewController alloc] initWithNibName:@"MoreContentViewController" bundle:nil];
             [moreContentView setCurrentUrl:[NSURL URLWithString:currentTopic.FBURL]];
             [moreContentView setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-            [self presentModalViewController:moreContentView animated:YES];
+            [self presentViewController:moreContentView animated:YES completion:nil];
             [moreContentView release];
         }
     }

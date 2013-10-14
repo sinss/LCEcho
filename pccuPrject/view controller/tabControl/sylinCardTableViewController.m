@@ -356,7 +356,7 @@
         MoreContentViewController *moreContentView = [[MoreContentViewController alloc] initWithNibName:@"MoreContentViewController" bundle:nil];
         [moreContentView setCurrentUrl:[NSURL URLWithString:urlString]];
         [moreContentView setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-        [self presentModalViewController:moreContentView animated:YES];
+        [self presentViewController:moreContentView animated:YES completion:nil];
         [moreContentView release];
     }
 }
@@ -405,7 +405,7 @@
     MoreContentViewController *moreContentView = [[MoreContentViewController alloc] initWithNibName:@"MoreContentViewController" bundle:nil];
     [moreContentView setCurrentUrl:[NSURL URLWithString:urlString]];
     [moreContentView setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-    [self presentModalViewController:moreContentView animated:YES];
+    [self presentViewController:moreContentView animated:YES completion:nil];
 }
 - (void)didPressCreateSylinButton
 {
@@ -413,7 +413,7 @@
     MoreContentViewController *moreContentView = [[MoreContentViewController alloc] initWithNibName:@"MoreContentViewController" bundle:nil];
     [moreContentView setCurrentUrl:[NSURL URLWithString:urlString]];
     [moreContentView setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-    [self presentModalViewController:moreContentView animated:YES];
+    [self presentViewController:moreContentView animated:YES completion:nil];
 }
 
 #pragma mark - UITextField delegate
@@ -537,7 +537,7 @@
 }
 - (void)closeItemPress
 {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)autoItemPress
 {

@@ -38,6 +38,10 @@ enum
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)])
+    {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
     [contentTableView setDataSource:self];
     [contentTableView setDelegate:self];
     [self resetContentData];
@@ -48,6 +52,7 @@ enum
     [super viewWillAppear:animated];
     if (IS_IPHONE_5)
     {
+        /*
         CGRect frame = self.view.bounds;
         CGFloat height = 44.f;
         CGFloat width = 320.f;
@@ -59,6 +64,7 @@ enum
                                              frame.size.height - height- 20,
                                              width,
                                              height)];
+         */
     }
 }
 

@@ -357,7 +357,7 @@
     MoreContentViewController *moreContentView = [[MoreContentViewController alloc] initWithNibName:@"MoreContentViewController" bundle:nil];
     [moreContentView setCurrentUrl:url];
     [moreContentView setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-    [self presentModalViewController:moreContentView animated:YES];
+    [self presentViewController:moreContentView animated:YES completion:nil];
     [moreContentView release];
 }
 

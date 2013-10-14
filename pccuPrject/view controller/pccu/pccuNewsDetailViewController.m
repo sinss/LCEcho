@@ -32,6 +32,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)])
+    {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
     [aTableView setDelegate:self];
     [aTableView setDataSource:self];
     UIImageView *bgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"maker_bg.png"]];
@@ -208,7 +212,7 @@
                 MoreContentViewController *moreContentView = [[MoreContentViewController alloc] initWithNibName:@"MoreContentViewController" bundle:nil];
                 [moreContentView setCurrentUrl:url];
                 [moreContentView setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-                [self presentModalViewController:moreContentView animated:YES];
+                [self presentViewController:moreContentView animated:YES completion:nil];
                 [moreContentView release];
             }
         }

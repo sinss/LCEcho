@@ -43,18 +43,37 @@
     //[RevMobAds startSessionWithAppID:@"502af58f2a7c4c0800000001"];
     self.window.backgroundColor = [UIColor whiteColor];
     //navigationbar
-    [[UINavigationBar appearance] setTintColor:navigationBarColor];
-    [[UINavigationBar appearance] setTitleTextAttributes:
-     [NSDictionary dictionaryWithObjectsAndKeys:
-      [UIColor whiteColor],
-      UITextAttributeTextColor,
-      [UIColor clearColor],
-      UITextAttributeTextShadowColor,
-      [NSValue valueWithUIOffset:UIOffsetMake(0, -1)],
-      UITextAttributeTextShadowOffset,
-      [UIFont fontWithName:@"Helvetica-Bold" size:15.0],
-      UITextAttributeFont,
-      nil]];
+    if (os_version >= 7.0)
+    {
+        [[UINavigationBar appearance] setTintColor:navigationBarColor];
+        [[UINavigationBar appearance] setTitleTextAttributes:
+         [NSDictionary dictionaryWithObjectsAndKeys:
+          [UIColor darkGrayColor],
+          UITextAttributeTextColor,
+          [UIColor clearColor],
+          UITextAttributeTextShadowColor,
+          [NSValue valueWithUIOffset:UIOffsetMake(0, -1)],
+          UITextAttributeTextShadowOffset,
+          [UIFont fontWithName:@"Helvetica-Bold" size:15.0],
+          UITextAttributeFont,
+          nil]];
+    }
+    else
+    {
+        [[UINavigationBar appearance] setTintColor:navigationBarColor];
+        [[UINavigationBar appearance] setTitleTextAttributes:
+         [NSDictionary dictionaryWithObjectsAndKeys:
+          [UIColor whiteColor],
+          UITextAttributeTextColor,
+          [UIColor clearColor],
+          UITextAttributeTextShadowColor,
+          [NSValue valueWithUIOffset:UIOffsetMake(0, -1)],
+          UITextAttributeTextShadowOffset,
+          [UIFont fontWithName:@"Helvetica-Bold" size:15.0],
+          UITextAttributeFont,
+          nil]];
+    }
+    
     //toolbar
     [[UIToolbar appearance] setTintColor:navigationBarColor];
     launchView = [[LaunchViewController alloc] initWithNibName:@"LaunchViewController" bundle:nil];

@@ -100,7 +100,7 @@
 
 - (IBAction)done:(id)sender
 {
-	[[self parentViewController] dismissModalViewControllerAnimated:YES];
+	[[self parentViewController] dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - UIScrollView delegate
@@ -214,7 +214,7 @@
     moreView.title = [[appConfigRecord appConfigInstance] tabTitle5];
     
     [tabControl setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-    [self presentModalViewController:tabControl animated:YES];
+    [self presentViewController:moreView animated:YES completion:nil];
     [storeList release];
     [topicView release];
     [sylinCoinView release];
@@ -350,7 +350,7 @@
     bannerView.currentAdRecord = [adDataArray objectAtIndex:imageTag];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:bannerView];
     [nav setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-    [self presentModalViewController:nav animated:YES];
+    [self presentViewController:nav animated:YES completion:nil];
     [bannerView release];
 }
 - (void)didPressButtonWithImage:(UIImage *)image

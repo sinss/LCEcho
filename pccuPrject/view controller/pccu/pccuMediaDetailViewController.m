@@ -31,6 +31,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)])
+    {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
     [self resetMediaContent];
 }
 
@@ -39,17 +43,20 @@
     [super viewWillAppear:animated];
     if (IS_IPHONE_5)
     {
+        /*
         CGRect frame = self.view.bounds;
         CGFloat height = 44.f;
         CGFloat width = 320.f;
+        
         [contentTextView setFrame:CGRectMake(contentTextView.frame.origin.x,
                                               contentTextView.frame.origin.y,
                                               contentTextView.frame.size.width,
                                               contentTextView.frame.size.height - 20)];
         [bannerImageView setFrame:CGRectMake(0,
-                                             frame.size.height - height- 20,
+                                             frame.size.height - height,
                                              width,
                                              height)];
+         */
     }
 }
 
@@ -100,7 +107,7 @@
     MoreContentViewController *moreContentView = [[MoreContentViewController alloc] initWithNibName:@"MoreContentViewController" bundle:nil];
     [moreContentView setCurrentUrl:[NSURL URLWithString:currentMediaRecord.mMovieUrl]];
     [moreContentView setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-    [self presentModalViewController:moreContentView animated:YES];
+    [self presentViewController:moreContentView animated:YES completion:nil];
     [moreContentView release];
 }
 
